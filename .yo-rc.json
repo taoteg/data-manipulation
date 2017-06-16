@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Data Manipulation",
+    "packageVersion": "0.0.0",
+    "revealTheme": "white",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "jgentle",
+    "githubRepository": "data-manipulation"
+  }
+}
