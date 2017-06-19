@@ -1,10 +1,13 @@
-<!-- .slide: data-background="./images/TACC_bg_clear.png" data-background-size="100% 100%" data-opacity="0.2"  -->
+<!-- .slide: data-background="./images/TACC_bg_clear_spaced.png" data-background-size="100% 100%" -->
 
 # Data Manipulation
 
-From the terminal...
-
-- html: ``` yo reveal:slide "Slide Title" ```
-- markdown: ``` yo reveal:slide "Slide Title" --markdown ```
-- add attrs: ``` yo reveal:slide "Slide Title" --attributes ```
-- add notes: ``` yo reveal:slide "Slide Title" --notes ```
+<p style="padding-top: 1rem; text-align: center;">
+John Gentle
+<br>
+Data Group
+<br>
+Texas Advanced Computing Center
+<br>
+jgentle@tacc.utexas.edu
+</p>
