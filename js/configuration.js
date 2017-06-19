@@ -9,7 +9,7 @@ Reveal.initialize({
   height: 720,
   minScale: 0.2,
 	maxScale: 1.5,
-  margin: 0.1,
+  // margin: 0.1,
 
   transition: 'slide', // none/fade/slide/convex/concave/zoom
 

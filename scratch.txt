@@ -1,0 +1,408 @@
+Data Manipulation and ETL Workflows
+
+Notes:
+- Use little johnny droptables image!!
+- Include some examples
+
+
+Slide Content:
+
+(index)
+________________________________________________________________________
+
+# Data Manipulation
+
+<p style="padding-top: 1rem; text-align: center;">
+John Gentle
+<br>
+Data Group
+<br>
+Texas Advanced Computing Center
+<br>
+jgentle@tacc.utexas.edu
+</p>
+
+________________________________________________________________________
+
+## Intro
+
+TBD...
+
+________________________________________________________________________
+
+## What is Data?
+
+Data is a set of values of qualitative or quantitative variables, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.
+
+### Come Again?
+
+Data is the representation of encoded information in a form suitable for further processing.
+
+________________________________________________________________________
+
+## What are Databases and DBMS?
+
+A database is simply a set of structured data held in a computer that is accessible through a variety of mechanisms.
+
+A Database Management System (DBMS) is comprised of the combined DDL, DML and DCL along with the supporting software applications used to systematically manage to the database by users and administrators.
+
+Often the term *database* is used to reference both the database and the DBMS used to manipulate it.
+
+________________________________________________________________________
+
+## Why do we need Databases?
+
+A database is designed to handle very large amounts of data, but stores them in such a way that finding and retrieving any data record is efficient.
+
+________________________________________________________________________
+
+##  What is a Data Query?
+
+A query to a database is a request for information. Querying something should not involve manipulating it.
+
+A manipulation over a database is the performance of some alteration on it (like the addition or deletion of data items).
+
+________________________________________________________________________
+
+##  What is Data Manipulation?
+
+A manipulation over a database is the performance of some alteration on it (like the addition or deletion of data items), through imperative or declarative statements.
+
+In order to ensure the reliability of the data during transactions, the data consistency model emerged.
+
+Data consistency means the data is the same across all instances at any given point of time.
+
+________________________________________________________________________
+
+## Data Consistency Models
+
+Generally databases conform to one of the consistency models of ACID or BASE.
+
+There is a continuum between ACID and BASE. You can decide how close you want to be to one end of the continuum or the other according to your priorities.
+
+Developers should choose ACID where data reliability and consistency are essential.
+
+Developers who choose BASE need to be more knowledgeable and rigorous about consistent data.
+
+Developers and data architects should select their data consistency trade-offs on a case-by-case basis.
+
+In practice, SQL databases prefer the ACID model while NoSQL databases prefer the BASE model.
+
+________________________________________________________________________
+
+## The ACID Consistency Model
+
+The key ACID guarantee is that it provides a safe environment in which to operate on your data.
+
+- Atomic: All operations in a transaction succeed or every operation is rolled back.
+- Consistent: On the completion of a transaction, the database is structurally sound.
+- Isolated: Transactions do not contend with one another. Contentious access to data is moderated by the database so that transactions appear to run sequentially.
+- Durable: The results of applying a transaction are permanent, even in the presence of failures.
+
+ACID properties mean that once a transaction is complete, its data has write consistency and is stable on disk.
+
+________________________________________________________________________
+
+## The BASE Consistency Model
+
+In the NoSQL world, ACID transactions are less fashionable as some databases have loosened the requirements for immediate consistency, data freshness and accuracy in order to gain other benefits, like scale and resilience.
+
+- Basic Availability: The database appears to work most of the time.
+- Soft-state: Stores don’t have to be write-consistent, nor do different replicas have to be mutually consistent all the time.
+- Eventual consistency: Stores exhibit consistency at some later point (e.g., lazily at read time).
+
+BASE properties are much looser than ACID guarantees, but there isn’t a direct one-for-one mapping between the two consistency models.
+
+________________________________________________________________________
+
+##  What is a Data Definition Language (DDL)?
+
+A *Data Definition Language* (DDL) is comprised of statements (syntax elements) that are used to build or modify the structure of objects in a database.
+
+Manipulation of persistent database objects (e.g. tables or stored procedures) via SQL schema statements, rather than the data stored within them, is considered to be part of the data definition language.
+
+________________________________________________________________________
+
+##  What is a Data Control Language (DCL)?
+
+A *Data Control Language* (DCL) is comprised of statements (syntax elements) that are used to grant or revoke access to users in a database.
+
+________________________________________________________________________
+
+##  What is a Data Manipulation Language (DML)?
+
+A *Data Manipulation Language* (DML) is comprised of statements (syntax elements) that are used to SELECT, INSERT, UPDATE or DELETE  *data* in a database. Sometimes it is referred to as a *Query Language*.
+
+There are two primary types of DML:
+- Procedural: specifies what data is required **and** how to get the data.
+- Declarative (Nonprocedural): specifies what data is required **without** specifying how to get the data.
+
+DML is not a programming language. It cannot be compiled and runs as an implicit program.
+
+DML statements are often considered a subset of the Query Language being used.
+
+________________________________________________________________________
+
+## Query Languages
+
+A query languages is a computer language that is used to interact with a database (or other information system) and retrieve data, either directly or through manipulation to derive a result.
+
+**Information Retrieval** (IR) is a query language used to make queries into database, where the semantics of the query are defined not by a precise rendering of a formal syntax, but by an interpretation of the most suitable results of the query.
+
+For the purposes of this presentation, we will be focusing on database query languages.
+
+The most popular query language is the **Structured Query Language** (SQL) commonly used by relational databases.
+
+________________________________________________________________________
+
+##  Regarding SQL
+
+SQL was first developed in the early 1970s at IBM by Raymond Boyce and Donald Chamberlin then commercially released by Oracle Corporation (known then as *Relational Software Inc.*) in 1979.
+
+SQL is as much a standard or a protocol as it is a language. There is only one SQL protocol, but there are many SQL RDBMS implementations that vary in their internal details.
+
+It has also become common for SQL front-ends to be built in specific languages that facilitate the programmer within the given language by obfuscating the complexity of the underlying SQL protocol.
+
+SQL data change statements are comprised of data manipulation language, which modify stored data but not the schema or database objects.
+
+________________________________________________________________________
+
+Exploring SQL DDL Statements
+
+CREATE, DROP, ALTER, RENAME, TRUNCATE
+
+________________________________________________________________________
+
+CREATE: Creates a component in a database system (ex. new database, table, index, stored procedure, etc.).
+
+*General Syntax*
+```
+  CREATE TABLE <TABLE_NAME>
+  (
+  <COLUMN_NAME> <DATA_TYPE>(<SIZE>),
+  <COLUMN_NAME> <DATA_TYPE>(<SIZE>),
+  ... n times ...
+  );
+
+  CREATE TABLE institute_attendees
+  (
+  id                INTEGER   PRIMARY KEY,
+  first_name        INTEGER   not null,
+  last_name         INTEGER   not null,
+  fname             INTEGER   not null,
+  attendance_date   INTEGER   not null
+  );
+```
+
+________________________________________________________________________
+
+DROP: Destroys an existing database component or object and removes it from the RDBMS.
+
+*(more specifically a database, table, index or view)*
+
+DROP can also be used to delete any column from a table.
+
+DROP behaves differently than the DELETE and TRUNCATE statements:
+- DELETE will delete some or all data from a table, but leave the table in the RDBMS.
+- DROP will remove the entire table from the database.
+
+________________________________________________________________________
+
+DROP Syntax
+
+*General Syntax*
+```
+DROP objecttype objectname;
+```
+
+*Example: Deleting a single column from a table*
+```
+ALTER TABLE <TABLE_NAME>
+DROP COLUMN <COLUMN_NAME>;
+```
+
+*Example: Deleting multiple columns from a table*
+```
+ALTER TABLE <TABLE_NAME>
+DROP (COLUMN1, COLUMN2, ...n-times);
+```
+
+*Example: Deleting a table*
+```
+DROP TABLE <TABLE_NAME>;
+
+DROP TABLE institute_attendees;
+```
+
+________________________________________________________________________
+
+ALTER: Can be used for two purposes:
+- to modify an existing database object
+- to modify the structure of an existing object
+
+Possible ALTER actions on a table include:
+- Addition of new columns
+- Deletion of existing columns
+- Changing the data type of columns
+- Changing the size of columns
+
+________________________________________________________________________
+
+ALTER Syntax
+
+*General syntax*
+```
+ALTER TABLE <TABLE_NAME>
+ADD|MODIFY (<COLUMN_NAME> <DATATYPE>(<SIZE>));
+```
+
+*Examples: Altering a table*
+```
+ALTER TABLE institute_attendees
+ADD (organization_id NUMBER(5));
+
+ALTER TABLE institute_attendees
+MODIFY (organization_id NUMBER(7));
+```
+
+A column *MUST* be empty before you can change its datatype.
+
+________________________________________________________________________
+
+RENAME: Used to rename an existing object in a database.
+
+*General Syntax*
+```
+RENAME <TABLE_NAME> TO <NEW_TABLE_NAME>;
+
+RENAME institute_attendees TO institute_adventurers;
+```
+________________________________________________________________________
+
+TRUNCATE: Used to delete *ALL* data from a table.
+
+*(This is much faster than DELETE)*
+
+*General Syntax*
+```
+TRUNCATE TABLE <TABLE_NAME>;
+
+TRUNCATE TABLE institute_adventurers;
+```
+
+________________________________________________________________________
+
+Exploring SQL DML Statements
+
+SELECT, INSERT, UPDATE, DELETE
+
+*Example Syntax*
+```
+SELECT ... FROM ... WHERE ...;
+INSERT INTO ... VALUES ...;
+UPDATE ... SET ... WHERE ...;
+DELETE FROM ... WHERE ...;
+```
+________________________________________________________________________
+
+
+A word on SELECT and DESC
+
+SELECT is technically outside of DML because it does not manipulate data.
+
+However, SELECT ...INTO **is** considered to be a DML because it modifies data.
+
+In common practice, SELECT is considered part of DML.
+
+________________________________________________________________________
+
+DESC: Displays the full table structure.
+
+*General Syntax*
+```
+DESC <TABLE_NAME>;
+
+DESC institute_attendees;
+```
+________________________________________________________________________
+
+INSERT: Used to insert a new record into a table.
+
+*General Syntax*
+```
+INSERT INTO <TABLE_NAME>[(COLUMN1, COLUMN2, ...n-times)]
+VALUES(VALUE1, VALUE2, ...n-times);
+```
+
+*Example: Adding a new record to a table*
+```
+INSERT INTO institute_attendees
+VALUES('42','Arthur','Dent','traveler','25-05-2017');
+```
+
+________________________________________________________________________
+
+UPDATE: Used to update an existing record in a table.
+
+*General Syntax*
+```
+UPDATE <TABLE_NAME>
+SET <COLUMN_NAME>=VALUE[, <COLUMN_NAME>=VALUE, ...n-times]
+[WHERE <CONDITION>];
+```
+
+If the **WHERE** clause is omitted, all values of the column will be updated.
+
+```
+UPDATE institute_attendees
+SET fname='Hapless Human'
+WHERE id=42;
+```
+
+Special syntax: **IS NULL** is for assignment while **=NULL** is a recognizer.
+```
+UPDATE institute_attendees
+SET title=NULL
+WHERE fname IS NULL;
+```
+
+________________________________________________________________________
+
+DELETE: Used to delete records from a table.
+
+*General Syntax*
+```
+DELETE FROM <TABLE_NAME>
+[WHERE <CONDITION>];
+
+DELETE FROM institute_attendees
+WHERE id=42;
+```
+
+Without a condition, DELETE will delete **ALL** records from a table.
+```
+DELETE FROM institute_attendees;
+```
+
+________________________________________________________________________
+
+
+________________________________________________________________________
+
+
+________________________________________________________________________
+
+
+________________________________________________________________________
+
+
+________________________________________________________________________
+
+
+________________________________________________________________________
+
+
+________________________________________________________________________
+
+
+________________________________________________________________________
