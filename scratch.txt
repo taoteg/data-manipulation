@@ -2,12 +2,14 @@ Data Manipulation and ETL Workflows
 
 Notes:
 - Use little johnny droptables image!!
+    - https://imgs.xkcd.com/comics/exploits_of_a_mom.png
+
 - Include some examples
 
 
 Slide Content:
 
-(index)
+[ lecture_title.md ]
 ________________________________________________________________________
 
 # Data Manipulation
@@ -22,11 +24,67 @@ Texas Advanced Computing Center
 jgentle@tacc.utexas.edu
 </p>
 
+
+
+[ lecture-overview.md ]
 ________________________________________________________________________
 
-## Intro
+##  Overview
 
-TBD...
+Data Management > Data Mining > Data Extraction > Data Manipulation > Data Processing
+
+
+
+[ data-processing-cycle.md ]
+________________________________________________________________________
+
+## The Data Processing Cycle
+
+
+
+
+________________________________________________________________________
+
+## The Data Lifecycle (Linear)
+
+![](/images/data/data_lifecycle_illustration-01-1.jpg) <!-- .element height="70%" width="70%" -->
+
+________________________________________________________________________
+
+## The Data Lifecycle (Cyclical)
+
+![](/images/data/data_life_cycle.png) <!-- .element height="50%" width="50%" -->
+
+________________________________________________________________________
+
+## What is Data Manipulation (General Context)?
+
+Data manipulation is the process of changing data (transforming) in an effort to make it easier to consume (load/transfer) or for optimized organization (processing/analysis/public).
+
+________________________________________________________________________
+
+## Types of Data Manipulation
+
+Data manipulation falls into three basic categories:
+
+- *Raw data* that requires manipulation in order to be consumed, processed or stored.
+- Data in a database that is being acted upon to produce some calculated or derived value.
+- Data that is published but does not meet the requirements for *data validity*.
+
+________________________________________________________________________
+
+## Data & Researcher Ethics (Validity & Integrity)
+
+This last category applies to data publication and research and is further subdivided into two sub-categories:
+
+- Data Falsification: the data exists but is reported inaccurately because:
+  - There were flaws in the measures used to determine validity
+  - The data has not been properly vetted for validity.
+  - The data has been *manipulated* to suit the researchers desired outcome
+
+  - Data Fabrication: the data does not exist, it is made up by the researcher.
+
+For the purposes of this lecture we will focus on dealing with raw data and the ETL process.
 
 ________________________________________________________________________
 
@@ -64,7 +122,7 @@ A manipulation over a database is the performance of some alteration on it (like
 
 ________________________________________________________________________
 
-##  What is Data Manipulation?
+##  What is Data Manipulation (DB Context)?
 
 A manipulation over a database is the performance of some alteration on it (like the addition or deletion of data items), through imperative or declarative statements.
 
