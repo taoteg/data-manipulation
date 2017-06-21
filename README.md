@@ -17,7 +17,6 @@ A presentation on general principles and practices common to data science includ
 * Machine learning  [pending]
 * Related resources  [pending]
 
-
 ### Get the Slides
 
 Get slides here: https://github.com/jgentle/data-manipulation
@@ -28,14 +27,17 @@ Clone or download as preferred.
 
 2017.06.22 Texas Advanced Computing Center Summer Institute - Data Manipulation (ETL) for Info Visualization.
 
-### Additional Notes
+### Setup Instructions
 
 Follow these steps to run the slideshow:
 
 1) Install NodeJS (v7.9.0 was used in preparation of this presentation).
+
     Get the latest version of Node here: https://nodejs.org/en/
+
 1) Install Bower.io (requires NodeJS)
     ```
     $ npm install -g bower
     ```
+
 1) TBD...
