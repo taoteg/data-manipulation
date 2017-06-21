@@ -50,4 +50,15 @@ Follow these steps to run the slideshow:
     $ bower install
     ```
 
-1) TBD...
+1) Start the presentation:
+    ```
+    $ npm start
+    ```
+1) A browser window should automatically open to:
+    ```
+    http://localhost:9000/
+    ```
+
+    If the browser does not open automatically, you can manually open one and enter the URL.
+
+1) Enjoy!
