@@ -39,7 +39,7 @@ background-color: var(--color-0F); }
 .reveal .slides > section > section {
   /*width: 94%;*/
   /*margin: 0 3%;*/
-  padding-top: 4rem;
+  /*padding-top: 4rem;*/
   line-height: 1.3;
   font-weight: inherit; }
 

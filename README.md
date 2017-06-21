@@ -70,6 +70,20 @@ Navigate the slide show with these controls:
   * select "View > Enter Full Screen" in your browser menu for the best fullscreen performance.
   * you can also use f to enter fullscreen, esc to exit fullscreen - but there is a bug in the background color styles that may bork the presentation design.
 
+### PDF or Printing the Presentation
+
+The presentation can be converted to print ready format by running it as usual then opening a customized version of the URL in your browser and following the usual CTRL/CMD+P conventions for printing to PDF or paper.
+
+*Note that the presentation will look garbled on the screen but will be correct in the print preview and in the PDF/files produced by the print process.*
+
+1) Append *?print-pdf* to the end of the url like so:
+    ```
+    http://localhost:9000/?print-pdf
+    ```
+2) CTRL/CMD+P to open the print dialog window.
+
+3) Print as desired.
+
 ### Presentation History
 
   2017.06.22 Texas Advanced Computing Center Summer Institute - Data Manipulation (ETL) for Info Visualization.
