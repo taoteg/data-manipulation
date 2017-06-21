@@ -6,4 +6,4 @@ The target of the Load process is often a database or data warehouse.
 
 In order to make the load process efficient, it is helpful to disable any constraints and indexes before the load and enable them back only after the load completes.
 
-The referential integrity needs to be maintained by ETL tool to ensure consistency.
+The referential integrity needs to be maintained by the ETL tools to ensure consistency.

@@ -9,3 +9,5 @@ There are many approaches for assessing the quality and characteristics of a dat
 **Reliability** assesses the way that a data mining model performs on different data sets. A data mining model is reliable if it generates the same type of predictions or finds the same general kinds of patterns regardless of the test data that is supplied.
 
 **Usefulness** includes various metrics that tell you whether the model provides useful information. You might also find that a model that appears successful in fact is meaningless, because it is based on cross-correlations in the data.
+
+Validation is commonly run after extraction (*post-extraction validation*), before load (*pre-load validation*) or after load (*post-load validation*).

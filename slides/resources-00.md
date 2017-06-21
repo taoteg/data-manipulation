@@ -12,14 +12,6 @@
 
 [Thearling.com](http://www.thearling.com/index.htm)
 
-[ETL Process](http://www.dataintegration.info/etl)
 
-[ETL Testing & Validation](https://docs.microsoft.com/en-us/sql/analysis-services/data-mining/testing-and-validation-data-mining)
 
-[5 Tips for Cleaning Dirty Data](http://www.nonlinearcreations.com/Digital/how-we-think/articles/2013/11/5-tips-for-cleaning-dirty-data.aspx)
-
-[ETL vs ELT: What's the Big Difference?](https://www.ironsidegroup.com/2015/03/01/etl-vs-elt-whats-the-big-difference/)
-
-[ETL and ELT Join Forces](http://edwblog.com/category/etl_elt)
-
-<!-- Break apart into new slide after here. -->
+<!-- Go into new slide after line 25. -->

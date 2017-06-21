@@ -1,6 +1,8 @@
 ##  ETL: Clean
 
-The cleaning step is one of the most important as it ensures the quality of the data in the data warehouse. Cleaning should perform basic data unification rules such as:
+The cleaning step is one of the most important as it ensures the quality of the data in the data warehouse.
+
+Cleaning should perform basic data unification rules such as:
 
 * Identify and remove duplicates
 * Convert numbers to a consistent representation
