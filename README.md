@@ -88,10 +88,12 @@ The presentation can be converted to print ready format by running it as usual t
 
 ### Presentation History
 
-  2017.06.22 Texas Advanced Computing Center Summer Institute - Data Manipulation (ETL) for Info Visualization.
+  2017.06.22 Texas Advanced Computing Center Summer Institute - Data and Information Analytics - Seminar: Data Manipulation (ETL)
 
 ### Additional Notes
 
 This slide deck is a work-in-progress and will continue to be updated as new content is added or old content is updated.
 
 If you want to create a similar presentation for yourself, you can get the revealJS project code here: https://github.com/hakimel/reveal.js
+
+There is also a yeoman generator for rapid presentation development found here: https://github.com/slara/generator-reveal
