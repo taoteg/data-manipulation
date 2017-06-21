@@ -11,7 +11,7 @@ Reveal.initialize({
 	maxScale: 1.0, //1.5,
   // margin: 0.1,
 
-  transition: 'slide', // none/fade/slide/convex/concave/zoom
+  transition: 'convex', // none/fade/slide/convex/concave/zoom
 
   // Optional reveal.js plugins
   dependencies: [
