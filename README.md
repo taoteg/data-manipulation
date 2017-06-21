@@ -23,10 +23,6 @@ Get slides here: https://github.com/jgentle/data-manipulation
 
 Clone or download as preferred.
 
-### Presentation History
-
-2017.06.22 Texas Advanced Computing Center Summer Institute - Data Manipulation (ETL) for Info Visualization.
-
 ### Setup Instructions
 
 Follow these steps to run the slideshow:
@@ -73,6 +69,10 @@ Navigate the slide show with these controls:
     * These configs can be overridden if desired.
   * select "View > Enter Full Screen" in your browser menu for the best fullscreen performance.
   * you can also use f to enter fullscreen, esc to exit fullscreen - but there is a bug in the background color styles that may bork the presentation design.
+
+### Presentation History
+
+  2017.06.22 Texas Advanced Computing Center Summer Institute - Data Manipulation (ETL) for Info Visualization.
 
 ### Additional Notes
 
