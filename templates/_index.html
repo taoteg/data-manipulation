@@ -33,7 +33,7 @@
         <script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
         <![endif]-->
     </head>
-    <body class="tacc-bg">
+    <body class="tacc-bg"><!-- class="tacc-bg" -->
         <div class="reveal">
             <div class="slides">
                 <% _.forEach(slides, function(slide) { %>
@@ -41,10 +41,8 @@
                         <%= section(slide) %>
                     <% } %>
                     <% if (_.isArray(slide)) { %>
-                        <section data-background-image="./images/TACC_bg_clear_spaced.png" data-background-size="cover">
-                            <% _.forEach(slide, function(verticalslide) { %>
-                                <%= section(verticalslide) %>
-                            <% }); %>
+                        <section><!-- data-background-image="./images/TACC_bg_clear_spaced.png" data-background-size="cover" -->
+                            <% _.forEach(slide, function(verticalslide) { %><%= section(verticalslide) %><% }); %>
                         </section>
                     <% } %>
                 <% }); %>

@@ -302,15 +302,43 @@ body {
  * CUSTOM BACKGROUND IMAGE
  *********************************************/
 .tacc-bg {
-  background: url(../images/TACC_bg_clear_spaced.png) no-repeat center center fixed;
+  /*background: url(../images/TACC_bg_clear_spaced.png) no-repeat center center fixed;*/
+  /*background: url(../images/TACC_bg_clear_1600x900.png) no-repeat center center fixed;*/
+  background: url(../images/TACC_bg_clear_1280x720.png) no-repeat center center fixed;
+
+  -webkit-background-position: 0 0;
+  -moz-background-position: 0 0;
+  -o-background-position: 0 0;
+  background-position: 0 0;
+
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  /**/
+
   /*
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  */
+   */
+ /*
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
   background-size: 100% auto;
+  */
+  /*
+   -webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+   -o-background-size: 100% 100%;
+   background-size: 100% 100%;
+   */
+   /*
+    -webkit-background-size: 99.9% 100%;
+    -moz-background-size: 99.9% 100%;
+    -o-background-size: 99.9% 100%;
+    background-size: 99.9% 100%;
+    */
 }

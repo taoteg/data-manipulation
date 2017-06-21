@@ -5,10 +5,10 @@ Reveal.initialize({
   progress: true,
   history: true,
   center: true,
-  width: 1280,
-  height: 720,
+  width: 1280, // 1280, 1600, 1920,
+  height: 720, // 720, 900, 1080,
   minScale: 0.2,
-	maxScale: 1.5,
+	maxScale: 1.0, //1.5,
   // margin: 0.1,
 
   transition: 'slide', // none/fade/slide/convex/concave/zoom
