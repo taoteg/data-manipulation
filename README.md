@@ -52,7 +52,7 @@ Follow these steps to run the slideshow:
 
 1) Start the presentation:
     ```
-    $ npm start
+    $ grunt serve
     ```
 1) A browser window should automatically open to:
     ```
@@ -62,3 +62,9 @@ Follow these steps to run the slideshow:
     If the browser does not open automatically, you can manually open one and enter the URL.
 
 1) Enjoy!
+
+### Additional Notes
+
+This slide deck is a work-in-progress and will continue to be updated as new content is added or old content is updated.
+
+If you want to create a similar presentation for yourself, you can get the revealJS project code here: https://github.com/hakimel/reveal.js
