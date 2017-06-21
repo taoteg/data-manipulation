@@ -10,8 +10,9 @@
   --color-02: #222222;
   --color-0F: #FFFFFF;
   --color-B1: #98bdef;
-  --color-B2: #2a76dd;
-  --color-B3: #6ca0e8;
+  --color-B2: #2a76dd; /* #205BAA; #12325D; */
+  --color-B3: #ff0000; /* #6ca0e8; */
+  --trans-00: rgba(0, 0, 0, 0.2);
 }
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: var(--color-0F); }
@@ -141,7 +142,7 @@ body {
   padding: 5px;
   font-style: italic;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 2px var(--trans-00); }
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
@@ -237,9 +238,10 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid #CCC;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 10px var(--trans-00); }
 
 .reveal section img.plain {
   border: 0;
@@ -290,7 +292,7 @@ body {
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2); }
+  background: var(--trans-00); }
 
 .reveal .progress span {
   background: var(--color-B2);
@@ -302,9 +304,9 @@ body {
  * CUSTOM BACKGROUND IMAGE
  *********************************************/
 .tacc-bg {
-  /*background: url(../images/TACC_bg_clear_spaced.png) no-repeat center center fixed;*/
+  /*background: url(../images/TACC_bg_clear_1920x1080.png) no-repeat center center fixed;*/
   /*background: url(../images/TACC_bg_clear_1600x900.png) no-repeat center center fixed;*/
-  background: url(../images/TACC_bg_clear_1280x720.png) no-repeat center center fixed;
+  background: url(../images/TACC_bg_clear_trimmed_1280x720.png) no-repeat center center fixed;
 
   -webkit-background-position: 0 0;
   -moz-background-position: 0 0;
@@ -315,30 +317,4 @@ body {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  /**/
-
-  /*
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-   */
- /*
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
-  */
-  /*
-   -webkit-background-size: 100% 100%;
-   -moz-background-size: 100% 100%;
-   -o-background-size: 100% 100%;
-   background-size: 100% 100%;
-   */
-   /*
-    -webkit-background-size: 99.9% 100%;
-    -moz-background-size: 99.9% 100%;
-    -o-background-size: 99.9% 100%;
-    background-size: 99.9% 100%;
-    */
 }
