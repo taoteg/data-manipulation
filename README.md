@@ -90,7 +90,7 @@ The presentation can be converted to print ready format by running it as usual t
 
 ### Presentation History
 
-  2017.06.22 Texas Advanced Computing Center Summer Institute - Data and Information Analytics - Seminar: Data Manipulation (ETL)
+  2017.06.22 Texas Advanced Computing Center - Summer Institute 2017 - Data and Information Analytics - Seminar: Data Manipulation (ETL)
 
 ### Additional Notes
 
