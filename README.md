@@ -61,16 +61,18 @@ Follow these steps to run the slideshow:
 
     If the browser does not open automatically, you can manually open one and enter the URL.
 
-1) Navigate the slide show with these controls:
-
-    * left & right arrows to move through slides horizontally.
-    * up & down arrows to drill into slide columns.
-    * escape key to see all slides (then arrows to nav to a specific slide)
-      * These configs can be overridden if desired.
-    * select "View > Enter Full Screen" in your browser menu for the best fullscreen performance.
-    * you can also use f to enter fullscreen, esc to exit fullscreen - but there is a bug in the background color styles that may bork the presentation design.
-
 1) Enjoy!
+
+### Presentation Controls
+
+Navigate the slide show with these controls:
+
+  * left & right arrows to move through slides horizontally.
+  * up & down arrows to drill into slide columns.
+  * escape key to see all slides (then arrows to nav to a specific slide)
+    * These configs can be overridden if desired.
+  * select "View > Enter Full Screen" in your browser menu for the best fullscreen performance.
+  * you can also use f to enter fullscreen, esc to exit fullscreen - but there is a bug in the background color styles that may bork the presentation design.
 
 ### Additional Notes
 
