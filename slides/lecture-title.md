@@ -1,5 +1,3 @@
-
-
 # Data Manipulation
 
 <p style="padding-top: 1rem; text-align: center;">
