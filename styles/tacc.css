@@ -304,8 +304,8 @@ background-color: var(--color-0F); }
  * CUSTOM BACKGROUND IMAGE
  *********************************************/
 .tacc-bg {
-  /*background: url(../images/bg/TACC_bg_clear_1920x1080.png) no-repeat center center fixed; */
-  /*background: url(../images/bg/TACC_bg_clear_1600x900.png) no-repeat center center fixed; */
+  /*background: url(../images/bg/TACC_bg_clear_1920x1080.png) no-repeat center center fixed;*/
+  /*background: url(../images/bg/TACC_bg_clear_1600x900.png) no-repeat center center fixed;*/
   background: url(../images/bg/TACC_bg_clear_trimmed_1280x720.png) no-repeat center center fixed;
 
   -webkit-background-position: 0 0;

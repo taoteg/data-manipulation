@@ -1,3 +1,3 @@
 ##  ETL Pipeline Diagram
 
-![](/images/data/data_integration_schema.png) <!-- .element width="80%" -->
+![](/images/data/etl-pipeline-diagram.png) <!-- .element width="100%" -->
