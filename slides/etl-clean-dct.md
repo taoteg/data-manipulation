@@ -1,6 +1,6 @@
 ##  Data Cleansing Diagram
 
-![](./resources/images/data/Open_Data_Quality_Cleansing_Framework.png)<!-- .element width="80%" -->
+![](resources/images/data/Open_Data_Quality_Cleansing_Framework.png)<!-- .element width="80%" -->
 
 <p>
 <span>
