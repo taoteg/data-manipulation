@@ -6,4 +6,4 @@ Extract . Validate . Clean . Transform . Aggregate . Load
 
 These phases are not necessarily sequential in execution.
 
-![](/images/data/2388-etldiagram.png) <!-- .element width="50%" -->
+![](/resources/images/data/2388-etldiagram.png) <!-- .element width="50%" -->

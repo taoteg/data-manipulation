@@ -50,4 +50,10 @@ df["Percent_of_Order"] = df["ext price"] / df["Order_Total"]
 dtype: float64
 ``` -->
 
-![](/images/data/transform-example.png) <!-- .element width="50%" -->
+![](/resources/images/data/transform-example.png) <!-- .element width="50%" -->
+
+<p>
+<span>
+Workflow Diagram.
+</span><!-- .element: class="caption" -->
+</p><!-- .element: class="caption-wrapper" -->
