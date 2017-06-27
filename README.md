@@ -1,6 +1,6 @@
 # Data Manipulation
 
-live slides here: https://jgentle.github.io/data-manipulation/
+The live slides: https://jgentle.github.io/data-manipulation/
 
 ## Abstract
 
