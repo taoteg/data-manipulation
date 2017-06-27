@@ -31,9 +31,10 @@ Follow these steps to run the slideshow:
 
     Get the latest version of Node here: https://nodejs.org/en/
 
-1) Install Bower.io (requires NodeJS):
+1) Install Bower.io and Grunt (requires NodeJS):
     ```
     $ npm install -g bower
+    $ npm install -g grunt-cli
     ```
 
 1) Install all the node dependencies:
