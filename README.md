@@ -1,5 +1,7 @@
 # Data Manipulation
 
+live slides here: https://jgentle.github.io/data-manipulation/
+
 ## Abstract
 
 A presentation on general principles and practices common to data science including:
