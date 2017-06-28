@@ -1,6 +1,8 @@
 <!-- .slide: data-background="./images/TACC_bg_clear.png" data-background-size="100% 100%" -->
 
-# Data Manipulation
+<!-- DO NOT USE THIS SLIDE IN PRESENTATION!! -->
+
+<!-- USing the yeoman reveal-js generator:
 
 From the terminal...
 
@@ -8,6 +10,7 @@ From the terminal...
 - markdown: ``` yo reveal:slide "Slide Title" --markdown ```
 - add attrs: ``` yo reveal:slide "Slide Title" --attributes ```
 - add notes: ``` yo reveal:slide "Slide Title" --notes ```
+-->
 
 <!--
 #  H1
@@ -130,4 +133,23 @@ Markdown provides backslash escapes for the following characters:
   .   dot
   !   exclamation mark
 
+-->
+
+<!-- NOTE: Any parentheses or hashes in URL links MUST be escaped as follows:
+  (   ==  %28
+  )   ==  %29
+  #   ==  %23
+
+  Example.
+  https://en.wikipedia.org/wiki/Amira_(software)#/media/File:Amira_Screenshot_with_Honeybee_Brain_visualization.png
+
+  Becomes:
+  https://en.wikipedia.org/wiki/Amira_%28software%29%23/media/File:Amira_Screenshot_with_Honeybee_Brain_visualization.png
+-->
+
+<!-- NOTE: YOUTUBE Videos can be aded as follows:
+
+  <iframe  width="840" height="472" src="https://www.youtube.com/embed/i9TtSCkoERw" frameborder="0" allowfullscreen></iframe>
+
+  Make sure you use the EMBED link, not the default SHARE link.
 -->

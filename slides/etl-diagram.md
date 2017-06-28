@@ -7,3 +7,9 @@ Extract . Validate . Clean . Transform . Aggregate . Load
 These phases are not necessarily sequential in execution.
 
 ![](resources/images/data/2388-etldiagram.png) <!-- .element width="50%" -->
+
+<p>
+<span>
+ETL Workflow Diagram.
+</span><!-- .element: class="caption" -->
+</p><!-- .element: class="caption-wrapper" -->

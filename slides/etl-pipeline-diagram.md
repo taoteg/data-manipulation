@@ -1,8 +1,8 @@
 ##  ETL Pipeline Diagram
 
-<!--![](/images/data/etl-pipeline-diagram.png)--><!-- .element width="100%" -->
+<!--![](resources/images/data/etl-pipeline-diagram.png)--><!-- .element width="100%" -->
 
-![](images/data/Data_warehouse_overview.jpg)<!-- .element width="46%" -->
+![](resources/images/data/Data_warehouse_overview.jpg)<!-- .element width="46%" -->
 
 <p>
 <span>
