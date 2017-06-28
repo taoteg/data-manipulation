@@ -1,6 +1,8 @@
 ##  ETL Transform Script (Python 2017)
 
-Using the Pandas package.
+Python transformation script using the Pandas package.
+
+<br>
 
 <!-- Attempt 1.
 ```
@@ -24,6 +26,7 @@ df_1["Percent_of_Order"] = df_1["ext price"] / df_1["Order_Total"]
 ```
 Attempt 2.
 -->
+
 ```
 import pandas as pd
 df = pd.read_excel("sales_transactions.xlsx")
@@ -33,6 +36,7 @@ df["Percent_of_Order"] = df["ext price"] / df["Order_Total"]
 # Or Combine them.
 # df["Percent_of_Order"] = df["ext price"] / df.groupby('order')["ext price"].transform('sum')
 ```
+
 <!-- log:
 ```
 0      576.12
@@ -49,6 +53,8 @@ df["Percent_of_Order"] = df["ext price"] / df["Order_Total"]
 11    3724.49
 dtype: float64
 ``` -->
+
+<br>
 
 ![](resources/images/data/transform-example.png) <!-- .element width="50%" -->
 
